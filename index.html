@@ -1,193 +1,393 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pooja</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pooja | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icon Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <script src="script.js" defer></script>
-    <!-- <script type="module" src=""https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src=""https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
-    <!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
-
-
-
-</head>
-<body>
-    <!-- header -->
+  </head>
+  <body>
+    <!-- HEADER -->
     <header class="header">
-        <img src="./assets/logo/logo1.png" alt="" class="logo">
-        <ul class="main-nav-list">
-            <li><a href="#home" class="main-nav-link">Home</a></li>
-           <li><a href="#about" class="main-nav-link">About</a></li>
-          <li><a href="#experience" class="main-nav-link">Experience</a></li>
-         <li><a href="#projects" class="main-nav-link">Projects</a></li>
+      <img src="./assets/logo/logo1.png" alt="Logo" class="logo" />
+      <ul class="main-nav-list">
+        <li><a href="#home" class="main-nav-link">Home</a></li>
+        <li><a href="#about" class="main-nav-link">About</a></li>
+        <li><a href="#experience" class="main-nav-link">Experience</a></li>
+        <li><a href="#projects" class="main-nav-link">Projects</a></li>
         <li><a href="#contact-resume" class="main-nav-link">Contact</a></li>
-            
-        </ul>
+      </ul>
     </header>
+
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
-        <img src="./assets/hero/me.jpeg" alt="" class="hero-img"/>
-       
-        <div class="hero-description">
-            <h1 class="hero-title">Hi, I'm <span class="pooja">Pooja</span></h1>
-            <p class="hero-subheading">Software Developer!</p>
+      <img src="./assets/hero/me.jpeg" alt="Pooja" class="hero-img" />
+      <div class="hero-description">
+        <h1 class="hero-title">Hi, I'm <span class="pooja">Pooja</span></h1>
+        <p class="hero-subheading">Full Stack Developer</p>
+        <div class="hero-introduction">
+          <p>
+            Building scalable full-stack applications with React, Flask, and
+            Django.
+          </p>
+          <p>
+            Passionate about clean code, robust APIs, and great user
+            experiences.
+          </p>
+        </div>
+        <a href="#projects" class="cta-button">View My Work</a>
+      </div>
+    </section>
+
+   <!-- ABOUT SECTION -->
+<section id="about" class="about-me">
+    <div class="about-me-description">
+        <p class="introduction">About Me</p>
+        <h1 class="about-me-title">Heyyyyy...</h1>
+        <p class="about-me-subheading">
+            I'm a Full Stack Developer with 2+ years of experience building scalable web applications.
+            Currently working at FloData Analytics, I specialize in React, Flask, and Django.
+            I thrive on solving complex problems, optimizing performance, and delivering clean,
+            production-ready code. Recognized as Employee of the Month for delivery excellence!
+        </p>
+    </div>
     
-            <!-- New Introduction Section -->
-            <div class="hero-introduction">
-                <p>Welcome to my personal space where I craft digital solutions with passion and precision.</p>
-                <p>Explore my portfolio, and let's build something amazing together!</p>
+    <!-- Enhanced Tech Stack Carousel -->
+    <div class="tech-stack-wrapper">
+        <!-- Header with label and controls in one row -->
+        <div class="tech-stack-header">
+            <p class="introduction skills-label">Tech Stack</p>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" aria-label="Previous">‹</button>
+                <button class="carousel-btn next-btn" aria-label="Next">›</button>
             </div>
-    
-            <!-- Call-to-Action -->
-            <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
         
-    
-    </section>
-    
-    <section id="about" class="about-me">
-        <div class="about-me-description">
-            <p class="introduction">Introduction</p>
-            <h1 class="about-me-title">Heyyyyy...</h1>
-            <p class="about-me-subheading">
-                Eager to learn and adapt, 
-                I thrive in environments where I can contribute fresh perspectives and innovative solutions.
-                My commitment to ongoing skill development ensures I'm always equipped to help companies achieve their goals
-                and navigate an ever-changing industry.
-
-            </p>
+        <div class="tech-carousel-container">
+            <div class="tech-carousel">
+                <div class="tech-slide">
+                    <div class="tech-item">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-django-plain colored"></i>
+                        <span>Django</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-flask-original colored"></i>
+                        <span>Flask</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-fastapi-plain colored"></i>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-cassandra-plain colored"></i>
+                        <span>Cassandra</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-docker-plain colored"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-amazonwebservices-original colored"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-redis-plain colored"></i>
+                        <span>Redis</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- <div></div> -->
-        
-        <div class="cards">
-            <p class="introduction">Skills</p>
-            <div class="card">
-                <img src="./assets/skills/htmlcss.png" alt="" class="htmlImg"/>
-                <p class="title">HTML & CSS</p>
-            </div>
-            <div class="card">
-                <img src="./assets/skills/js.png" alt="" class="js"/>
-                <p class="title">JavaScript</p>
-            </div>
-            <div class="card">
-                <img src="./assets/skills/django-logo.png" alt="" class="django"/>
-                <p class="title">Django</p>
-            </div>
-            <div class="card">
-                <img src="./assets/skills/python-logo.png" alt="" class="python"/>
-                <p class="title">Python</p>
-            </div>
-            <div class="card">
-                <img src="./assets/skills/react.png" alt="" class="threejsImg"/>
-                <p class="title">Three Js</p>
-            </div>
-        </div>
+        <div class="carousel-dots"></div>
+    </div>
+</section>
 
-    </section>
-    <!-- WORK EXPERIENCE -->
+    <!-- EXPERIENCE SECTION -->
     <section id="experience" class="time-line-section">
-        <div class="time-line-content">
-            <div class="heading-description">
-                <p class="time-line-title">WHAT I HAVE DONE !</p>
-                <h1 class="time-line-subheading">Work Experience</h1>
-            </div>
-            <div class="timeline">
-                
-                <div class="time-line-description">
-                   
-                    <div class="content">
-                    <h2 class="content-timeline-title">Django Developer Intern</h2>
-                    <p class="content-timeline-description">Dotnova.AI Pvt Ltd.
-                        Developed and maintained a dashboard using Python, Django, and related technologies.
-                        <br>Collaborated with other developers, designers, and stakeholders to integrate third-party services.</p>
-                </div>
-                </div>
-
-                <div class="time-line-description">
-                    
-                    <div class="content">
-                    <h2 class="content-timeline-title">Data Science, ML & AI Intern</h2>
-                    <p class="content-timeline-description">iHUB DivyaSampark at IIT Roorkee.
-                        <br>Practiced upon different projects related to Data Science, ML & AI.</p>
-                </div>
-                </div>
-            </div>
+      <div class="time-line-content">
+        <div class="heading-description">
+          <p class="time-line-title">Professional Journey</p>
+          <h1 class="time-line-subheading">Work Experience</h1>
         </div>
+        <div class="timeline">
+          <!-- Experience 1: FloData Analytics -->
+          <div class="time-line-description">
+            <div class="content">
+              <h2 class="content-timeline-title">Full Stack Developer</h2>
+              <p class="company-name">FloData Analytics • Sep 2024 - Present</p>
+              <ul class="content-timeline-description">
+                <li>
+                  Built 3 full-stack modules using React and Flask for 1,000+
+                  internal users
+                </li>
+                <li>
+                  Collaborated with US clients on requirements gathering and
+                  feature deployment
+                </li>
+                <li>
+                  Enhanced UI/UX across modules, improving usability and visual
+                  consistency
+                </li>
+                <li>
+                  🏆 Employee of the Month (June 2025) for delivery excellence
+                </li>
+                <li>
+                  Integrated frontend-backend for 15+ features, cutting
+                  deployment time by 20%
+                </li>
+                <li>
+                  Architected RESTful APIs with Flask, PostgreSQL, JWT auth, and
+                  RBAC
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <!-- Experience 2: Haeywa -->
+          <div class="time-line-description">
+            <div class="content">
+              <h2 class="content-timeline-title">Software Developer</h2>
+              <p class="company-name">Haeywa • Oct 2023 - July 2024</p>
+              <ul class="content-timeline-description">
+                <li>
+                  Designed secure dashboard authentication using Python, Kafka,
+                  & Cassandra
+                </li>
+                <li>
+                  Supported 10K+ concurrent users with scalable architecture
+                </li>
+                <li>
+                  Developed push notification system using Python, FCM, and
+                  Django
+                </li>
+                <li>
+                  Built automated icon generation using Python (Boto3) and AWS
+                  S3
+                </li>
+                <li>
+                  Reduced manual effort by 15 hours/week through automation
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3: iHUB IIT Roorkee -->
+          <div class="time-line-description">
+            <div class="content">
+              <h2 class="content-timeline-title">Data Science Intern</h2>
+              <p class="company-name">
+                iHUB DivyaSampark, IIT Roorkee • June 2023 - Aug 2023
+              </p>
+              <ul class="content-timeline-description">
+                <li>
+                  Built "Bengaluru Estate Prediction Model" with 85% accuracy
+                </li>
+                <li>
+                  Used Python (pandas, NumPy, scikit-learn) for ML development
+                </li>
+                <li>
+                  Cleaned 10K+ real estate records with feature engineering
+                </li>
+                <li>
+                  Created interactive dashboards using JavaScript and Chart.js
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Project -->
-
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
-        <h2 class="projects-title">Some of my Personal Projects</h2>
-        <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-              src="assets/projects/bpm.png"
-              alt="bg model"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Bengaluru Estate Prediction Model</h3>
-            <p class="project-details">
-                In my Bengaluru Estate Prediction Model project, I delved into the world of real estate analytics and predictive modeling. Leveraging advanced data science techniques, I aimed to provide accurate predictions for property prices in Bengaluru, a dynamic and rapidly growing real estate market.
-            </p>
-            <a href="https://github.com/Pooja2579/Bengaluru-Estate-Prediction.git" target="_blank" class="project-link">Check it Out</a>
+      <h2 class="projects-title">Featured Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1: Inventory Management -->
+        <div class="project-container project-card">
+          <img
+            src="assets/projects/bpm.png"
+            alt="Inventory Management"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Inventory & Order Management</h3>
+          <p class="project-details">
+            Production-ready full-stack app with FastAPI, React, PostgreSQL, and
+            Docker. Features product CRUD with SKU uniqueness, stock validation,
+            customer management, and automated order processing with inventory
+            checks.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Docker</span>
           </div>
-          <div class="project-container project-card">
-            <img
-              src="assets/projects/socialcall.png"
-              alt=""
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Social Call</h3>
-            <p class="project-details">
-                Developed a dynamic social media platform using HTML, CSS, Tailwind, and Django, showcasing a responsive design, seamless user experience, and interactive social features. The project reflects my proficiency in full-stack development and commitment to creating engaging digital experiences.
-            </p>
-            <a href="#" target="_blank" class="project-link">Check it Out</a>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="assets/projects/ecomdash.png"
-              alt=""
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Ecommerce Dashboard</h3>
-            <p class="project-details">
-                In my E-commerce Dashboard project, I undertook the challenge of designing and implementing a comprehensive analytics dashboard for an online retail platform. This project aimed to provide stakeholders with a centralized hub for monitoring key performance indicators and making data-driven decisions to optimize the e-commerce business.
-            </p>
-            <a href="#" target="_blank" class="project-link">Check it Out</a>
-          </div>
+          <a
+            href="https://github.com/Pooja2579"
+            target="_blank"
+            class="project-link"
+            >View on GitHub →</a
+          >
         </div>
-      </section>
 
-      <!-- Add Contact and Resume section -->
-
-      <section id="contact-resume" class="contact-resume">
-        <div class="contact-container">
-          <h2 class="contact-title">Contact Me</h2>
-      
-        </div>
-      
-        <div class="resume-container">
-          <p class="resume-description">Feel free to check out my resume and connect with me on LinkedIn and GitHub.</p>
-          <div class="icons-container">
-            <a href="https://www.linkedin.com/in/pooja-46876a210/" target="_blank" class="icon-link">
-              <img src="assets/contact/linkedin.png" alt="LinkedIn Icon" class="icon-img" />
-            </a>
-            <a href="https://github.com/Pooja2579" target="_blank" class="icon-link">
-              <img src="assets/contact/github.png" alt="GitHub Icon" class="icon-img" />
-            </a>
-            <a href="https://drive.google.com/file/d/1W1qy2KZgUKXrDDIaUBtK8YFB3jUyHwRw/view?usp=sharing" target="_blank" class="icon-link">
-              <img src="assets/contact/resume.png" alt="Resume Icon" class="icon-img" />
-            </a>
+        <!-- Project 2: Bike-pool -->
+        <div class="project-container project-card">
+          <img
+            src="assets/projects/socialcall.png"
+            alt="Bike-pool"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Bike-pool (Ride-sharing)</h3>
+          <p class="project-details">
+            Ride-sharing platform with OTP-based phone verification and REST
+            APIs for ride matching. Built with Flask backend, React frontend
+            with TypeScript, and real-time tracking with Google Maps-style
+            navigation.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST APIs</span>
           </div>
+          <a
+            href="https://github.com/Pooja2579"
+            target="_blank"
+            class="project-link"
+            >View on GitHub →</a
+          >
         </div>
-      </section>
-    
-</body>
+
+        <!-- Project 3: Payment Dashboard -->
+        <div class="project-container project-card">
+          <img
+            src="assets/projects/ecomdash.png"
+            alt="Payment Dashboard"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Payment Processing Dashboard</h3>
+          <p class="project-details">
+            Fault-tolerant payment gateway with Redis-cached Luhn validation
+            (80% latency reduction) and Celery async processing. Real-time
+            WebSocket dashboard with JWT auth, rate limiting, and multi-state
+            payment handling.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Celery</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <a
+            href="https://github.com/Pooja2579"
+            target="_blank"
+            class="project-link"
+            >View on GitHub →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & RESUME -->
+    <section id="contact-resume" class="contact-resume">
+      <div class="contact-container">
+        <h2 class="contact-title">Let's Connect</h2>
+        <p class="resume-description">
+          I'm always open to new opportunities and collaborations. Feel free to
+          reach out or check out my work!
+        </p>
+        <div class="icons-container">
+          <a
+            href="https://www.linkedin.com/in/pooja2002/"
+            target="_blank"
+            class="icon-link"
+          >
+            <img
+              src="assets/contact/linkedin.png"
+              alt="LinkedIn"
+              class="icon-img"
+            />
+          </a>
+          <a
+            href="https://github.com/Pooja2579"
+            target="_blank"
+            class="icon-link"
+          >
+            <img
+              src="assets/contact/github.png"
+              alt="GitHub"
+              class="icon-img"
+            />
+          </a>
+          <a
+            href="mailto:pooja84413@gmail.com"
+            target="_blank"
+            class="icon-link"
+          >
+            <img src="assets/contact/email.png" alt="Email" class="icon-img" />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1W1qy2KZgUKXrDDIaUBtK8YFB3jUyHwRw/view?usp=sharing"
+            target="_blank"
+            class="icon-link"
+          >
+            <img
+              src="assets/contact/resume.png"
+              alt="Resume"
+              class="icon-img"
+            />
+          </a>
+        </div>
+        <p class="contact-email">📧 pooja84413@gmail.com | 📱 7070219986</p>
+      </div>
+    </section>
+  </body>
 </html>
