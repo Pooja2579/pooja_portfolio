@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #010115;
+}
+
+/* header */
+.header{
+    position: relative;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 0 10vw;
+}
+
+.logo{
+    max-width: 7vw;
+    z-index: 3;
+    opacity: 0.7; 
+    transition: opacity 0.5s ease;
+}
+.logo:hover {
+    opacity: 1;
+}
+
+.main-nav-list{
+    display: flex;
+    list-style: none;
+    gap:5vw;
+    z-index: 3;
+}
+
+.main-nav-link{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.8vw;
+    transition: all 0.5s;
+    font-family: "Dancing Script";
+    transition: color 0.5s;
+}
+
+.main-nav-link:hover {
+    color: #7a31bf;
+}
+
+.hero {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-img {
+    position: absolute;
+    width: 25vw; /* Adjust the width to make it smaller */
+    margin-left: 60vw;
+    z-index: 1;
+    border-radius: 50%;
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-description {
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    margin-top: -60vh;
+    margin-left: -40vw;
+    margin: -60vh 0 0 -40vw; 
+    z-index: 2;
+}
+
+.hero-title{
+    color: #ffff;
+    font-size: 3vw;
+    font-weight: 400;
+    font-family: "EB Garamond";
+    margin-bottom: 1.5vh;
+}
+
+.pooja{
+    color: #7a31bf;
+    font-family: "Dancing Script";
+}
+
+.hero-subheading{
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: "EB Garamond";
+    margin-left: 2.6vw;
+}
+.hero-introduction {
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: "Dancing Script";
+    text-align: center;
+    margin-top: 2vh; 
+    margin-bottom: 2vh;
+}
+
+.cta-button {
+    /* Add styles for your call-to-action button */
+    /* Example styles: */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7a31bf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 2vh;
+}
+
+.cta-button:hover {
+    background-color: #5e237f;
+}
+
+/* .hero-model {
+    position: relative;
+    z-index: 1;
+    
+    
+} */
+
+/* model-viewer{
+    width: 64vw;
+    height: 95vh;
+    z-index: 1;
+} */
+
+.about-me{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 10vw;
+
+}
+.about-me-description{
+    width: 30vw;
+    height: 35vh;
+    position: absolute;
+    margin-top: -50vh;
+    margin-left: -50vw;
+}
+
+.introduction{
+    color: #ffffff5a;
+    font-size: 1vw;
+    padding-bottom: 2vh;
+}
+
+
+.about-me-title{
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: "Dancing Script";
+}
+
+.about-me-subheading{
+    color: #fffb;
+    font-size: 1.4vw;
+    font-weight: "EB Garamond";
+    line-height: 1.2;
+    padding-top: 3vh;
+}
+.cards{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 55vh; /* Adjusted top margin for space */
+    margin-top: 5vh;
+}
+
+.card{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 10vw;
+    height: 25vh;
+    margin: 2vw;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 9px #fffb;
+}
+
+.js{
+    width: 60%;
+    z-index: 1;
+}
+
+.threejsImg,
+.htmlImg {
+    width: 150%;
+    z-index: 1;
+    margin-top: -2vh;
+}
+
+.django,
+.python
+{
+    width: 70%;
+    z-index: 1;
+}
+
+.title{
+    color: #fff;
+    position: relative;
+    font-size: 1.6vw;
+    text-align: center;
+    z-index: 10;
+    font-family: "EB Garamond";
+    font-weight: 400;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    width: 20vw;
+    height: 25vh;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: rotation 5s linear infinite;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    inset: 1.15vw;
+    background-color: #16063a;
+    border-radius: 15px;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.time-line-section{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100vh;
+    height: auto;
+    background-color: #010115;
+    padding: 0 10vw;
+}
+
+.time-line-content{
+    display: grid;
+    place-items: center;
+    width: 100vh;
+    padding-bottom: 25vh;
+}
+
+.heading-description{
+    display: grid;
+    place-items: center;   
+    margin-bottom: 10vh;
+    margin-left: -50vw;
+}
+
+.time-line-title{
+    color: #ffffff5a;
+    font-size: 1vw;
+    padding-bottom: 2vh;
+}
+
+.time-line-subheading{
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: "Dancing Script";
+    margin-left: 50vw;
+}
+
+.line{
+    position: absolute;
+    z-index: 2;
+    width:  0.15vw;
+    top: -7vh;
+    background-color: #fff;
+    box-shadow: 0 0 30px #fff;
+
+}
+
+.line:before,
+.line::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width:  1.2vw;
+    height: 2.3vh;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+      
+}
+
+
+.line:after{
+    bottom: 0;
+}
+
+.time-line-description {
+    display: flex;
+    flex-direction: row; /* Display both internships in one row */
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center;
+    width: 70vw; /* Adjust the width as needed */
+    min-height: 25vh; /* Adjust the minimum height as needed */
+}
+
+/* Remove the transform property for even elements */
+.time-line-description:nth-child(even) {
+    transform: none;
+}
+
+.mini-circle{
+    position: absolute;
+    display: black;
+    width: 1.2vw;
+    height: 2.3vh;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: calc(50% -2vw);
+    padding: 2vh 2vw;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #fffa;
+}
+.content-timeline-title {
+    color: #fff; /* White color */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for a 3D effect */
+    /* You can adjust the values in the text-shadow property based on your preference */
+}
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+.content-timeline-description {
+    color: #fffa; /* Updated text color for better visibility */
+    font-size: 1.2vw;
+    padding-top: 2vh;
+    font-family: "EB Garamond";
+    line-height: 1.2;
+    max-width: 100%; /* Allow text to wrap if it exceeds the container width */
+}
+
+
+/* Project */
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 65%;
+    height: 60%;
+  }
+  
+  
+  .projects-title {
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: "Dancing Script";
+    margin-left: 50vw;
+    margin-bottom: 70px; /* Add margin-bottom for space */
+    align-items: center;
+  }
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 0.3s; /* Add smooth transition on hover */
+    margin-bottom: 20px; 
+    width: 21.875rem;
+    padding: 20px;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+  }
+  
+  .project-pic {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-details {
+    display: none; /* Hide project details by default */
+    text-align: center;
+  }
+  
+  .project-card:hover .project-details {
+    display: block; /* Show project details on hover */
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+  }
+  
+  .project-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Contact Section */
+
+  .contact-resume {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+    text-align: center; /* Center the content */
+  }
+  
+  .contact-title {
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: "Dancing Script";
+    margin-bottom: 70px;
+    align-items: center;
+  }
+  
+  .resume-description {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .icons-container {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+  }
+  
+  .icon-link {
+    margin: 0 15px; /* Add some space between icons */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .icon-link:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  .icon-img {
+    width: 80px; /* Increase the width */
+    height: 80px; /* Increase the height */
+    border-radius: 50%;
+  }
+  
