@@ -17,37 +17,111 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <img src="./assets/logo/logo1.png" alt="Logo" class="logo" />
-      <ul class="main-nav-list">
-        <li><a href="#home" class="main-nav-link">Home</a></li>
-        <li><a href="#about" class="main-nav-link">About</a></li>
-        <li><a href="#experience" class="main-nav-link">Experience</a></li>
-        <li><a href="#projects" class="main-nav-link">Projects</a></li>
-        <li><a href="#contact-resume" class="main-nav-link">Contact</a></li>
-      </ul>
-    </header>
+ <!-- HEADER -->
+<header class="header">
+    <div class="header-container">
+        <a href="#home" class="logo-link">
+            <img src="./assets/logo/logo1.png" alt="Logo" class="logo" />
+            <span class="logo-text">Pooja Jha</span>
+        </a>
+        
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a href="#home" class="main-nav-link active">Home</a></li>
+                <li><a href="#about" class="main-nav-link">About</a></li>
+                <li><a href="#experience" class="main-nav-link">Experience</a></li>
+                <li><a href="#projects" class="main-nav-link">Projects</a></li>
+                <li><a href="#contact-resume" class="main-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <a href="#contact-resume" class="header-cta">Let's Connect</a>
+            <button class="hamburger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+</header>
 
     <!-- HERO SECTION -->
-    <section id="home" class="hero">
-      <img src="./assets/hero/me.jpeg" alt="Pooja" class="hero-img" />
-      <div class="hero-description">
-        <h1 class="hero-title">Hi, I'm <span class="pooja">Pooja</span></h1>
-        <p class="hero-subheading">Full Stack Developer</p>
-        <div class="hero-introduction">
-          <p>
-            Building scalable full-stack applications with React, Flask, and
-            Django.
-          </p>
-          <p>
-            Passionate about clean code, robust APIs, and great user
-            experiences.
-          </p>
+<section id="home" class="hero">
+    <!-- Animated Background -->
+    <div class="hero-bg-animation">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="pooja">Pooja Jha</span>
+            </h1>
+            <p class="hero-subheading">
+                <span class="typing-text">Full Stack Developer</span>
+            </p>
+            <div class="hero-introduction">
+                <p>🚀 Building scalable full-stack applications with React, Flask, and Django</p>
+                <p>💡 Clean code • Robust APIs • Great user experiences</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button-primary">
+                    <i class="fas fa-code"></i> View My Work
+                </a>
+                <a href="#contact-resume" class="cta-button-secondary">
+                    <i class="fas fa-paper-plane"></i> Let's Talk
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
         </div>
-        <a href="#projects" class="cta-button">View My Work</a>
-      </div>
-    </section>
+        <div class="hero-image-wrapper">
+            <img src="./assets/hero/me.jpeg" alt="Pooja" class="hero-img" />
+            <div class="hero-image-ring"></div>
+            <div class="floating-badge badge-1">
+                <i class="fas fa-code"></i>
+                <span>React</span>
+            </div>
+            <div class="floating-badge badge-2">
+                <i class="fas fa-database"></i>
+                <span>Flask</span>
+            </div>
+            <div class="floating-badge badge-3">
+                <i class="fas fa-cloud"></i>
+                <span>Django</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line">
+            <div class="scroll-dot"></div>
+        </div>
+    </div>
+</section>
 
    <!-- ABOUT SECTION -->
 <section id="about" class="about-me">
@@ -242,152 +316,375 @@
         </div>
       </div>
     </section>
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+    <div class="projects-header">
+        <p class="projects-subtitle">My Portfolio</p>
+        <h2 class="projects-title">Featured Projects</h2>
+        <p class="projects-description">
+            A collection of my work showcasing full-stack development, API design, and modern UI/UX.
+        </p>
+    </div>
+    
+    <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="game">Game</button>
+    </div>
+    
+    <!-- Projects Carousel -->
+    <div class="projects-carousel-wrapper">
+        <button class="projects-carousel-btn prev-project-btn" aria-label="Previous Projects">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="projects-carousel-container">
+            <div class="projects-carousel">
+                <div class="projects-track">
+                    <!-- Project 1: Inventory & Order Management -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/inventory-order-system" 
+                                 alt="Inventory & Order Management" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/7a31bf/ffffff?text=Inventory+System'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/inventory-order-system" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">FastAPI</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">Docker</span>
+                            </div>
+                            <h3 class="project-title">Inventory & Order Management</h3>
+                            <p class="project-description">
+                                Production-ready full-stack app with product CRUD, stock validation, 
+                                order processing, and real-time dashboard.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/inventory-order-system" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects">
-      <h2 class="projects-title">Featured Projects</h2>
-      <div class="projects-container">
-        <!-- Project 1: Inventory Management -->
-        <div class="project-container project-card">
-          <img
-            src="assets/projects/bpm.png"
-            alt="Inventory Management"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Inventory & Order Management</h3>
-          <p class="project-details">
-            Production-ready full-stack app with FastAPI, React, PostgreSQL, and
-            Docker. Features product CRUD with SKU uniqueness, stock validation,
-            customer management, and automated order processing with inventory
-            checks.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">Docker</span>
-          </div>
-          <a
-            href="https://github.com/Pooja2579"
-            target="_blank"
-            class="project-link"
-            >View on GitHub →</a
-          >
+                    <!-- Project 2: HRMS Frontend -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/hrms-frontend" 
+                                 alt="HRMS Frontend" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/00ccff/ffffff?text=HRMS'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/hrms-frontend" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Tailwind CSS</span>
+                                <span class="project-tag">React Router</span>
+                            </div>
+                            <h3 class="project-title">HRMS - Human Resource Management</h3>
+                            <p class="project-description">
+                                Comprehensive HRMS with employee management, attendance tracking, 
+                                leave management, payroll, and performance reviews.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/hrms-frontend" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Bike Pooling System -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/bike-sys" 
+                                 alt="Bike Pooling System" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/d400d4/ffffff?text=Bike+Pooling'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/bike-sys" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Express</span>
+                                <span class="project-tag">Vite</span>
+                                <span class="project-tag">REST API</span>
+                            </div>
+                            <h3 class="project-title">Bike Pooling System</h3>
+                            <p class="project-description">
+                                Ride-sharing platform with OTP phone verification, ride booking, 
+                                offer rides, and live route navigation simulation.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/bike-sys" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Payment Checkout UI -->
+                    <div class="project-card" data-category="frontend">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/Payment-Checkout-UI" 
+                                 alt="Payment Checkout UI" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/ff6b6b/ffffff?text=Payment+UI'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/Payment-Checkout-UI" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Payment Checkout UI</h3>
+                            <p class="project-description">
+                                Modern, responsive payment checkout interface with clean design 
+                                and smooth user experience for payment processing.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/Payment-Checkout-UI" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Task Manager API -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/Task-manager" 
+                                 alt="Task Manager API" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/4ecdc4/ffffff?text=Task+Manager'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/Task-manager" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">JWT</span>
+                                <span class="project-tag">SQLAlchemy</span>
+                                <span class="project-tag">REST API</span>
+                            </div>
+                            <h3 class="project-title">Task Manager API</h3>
+                            <p class="project-description">
+                                RESTful API with JWT authentication, CRUD operations, pagination, 
+                                filtering, and comprehensive testing.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/Task-manager" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Airlines Booking System -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/Airlines-Booking" 
+                                 alt="Airlines Booking" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/ffa502/ffffff?text=Airlines+Booking'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/Airlines-Booking" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Flask</span>
+                                <span class="project-tag">SQLite</span>
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                            <h3 class="project-title">Airlines Booking System</h3>
+                            <p class="project-description">
+                                Flight booking system with user authentication, flight search, 
+                                booking management, and admin panel.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/Airlines-Booking" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Delivery Management System -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/delivery_management_system" 
+                                 alt="Delivery Management" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/2ecc71/ffffff?text=Delivery+System'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/delivery_management_system" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Django</span>
+                                <span class="project-tag">SocketIO</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">Pandas</span>
+                            </div>
+                            <h3 class="project-title">Delivery Parcel Management</h3>
+                            <p class="project-description">
+                                Real-time parcel tracking system with SocketIO updates, bulk processing, 
+                                reporting, and role-based access control.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/delivery_management_system" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Incident Management System -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/incident_managment_sys" 
+                                 alt="Incident Management" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/e74c3c/ffffff?text=Incident+Management'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/incident_managment_sys" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Django</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                            <h3 class="project-title">Incident Management System</h3>
+                            <p class="project-description">
+                                Track and manage incidents with user authentication, incident reporting, 
+                                status tracking, and resolution workflow.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/incident_managment_sys" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: Car Game -->
+                    <div class="project-card" data-category="game">
+                        <div class="project-image-wrapper">
+                            <img src="https://opengraph.githubassets.com/1/Pooja2579/CarGame.py" 
+                                 alt="Car Game" loading="lazy" class="project-image"
+                                 onerror="this.src='https://via.placeholder.com/600x400/f39c12/ffffff?text=Car+Game'"/>
+                            <div class="project-overlay">
+                                <a href="https://github.com/Pooja2579/CarGame.py" target="_blank" class="project-github-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Pygame</span>
+                                <span class="project-tag">Game</span>
+                            </div>
+                            <h3 class="project-title">Car Game</h3>
+                            <p class="project-description">
+                                Classic car racing game built with Pygame. Features obstacle avoidance, 
+                                score tracking, and progressive difficulty.
+                            </p>
+                            <div class="project-footer">
+                                <span class="project-status completed">✅ Completed</span>
+                                <a href="https://github.com/Pooja2579/CarGame.py" target="_blank" class="project-link">
+                                    View on GitHub <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Project 2: Bike-pool -->
-        <div class="project-container project-card">
-          <img
-            src="assets/projects/socialcall.png"
-            alt="Bike-pool"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Bike-pool (Ride-sharing)</h3>
-          <p class="project-details">
-            Ride-sharing platform with OTP-based phone verification and REST
-            APIs for ride matching. Built with Flask backend, React frontend
-            with TypeScript, and real-time tracking with Google Maps-style
-            navigation.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Flask</span>
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">TypeScript</span>
-            <span class="tech-tag">REST APIs</span>
-          </div>
-          <a
-            href="https://github.com/Pooja2579"
-            target="_blank"
-            class="project-link"
-            >View on GitHub →</a
-          >
-        </div>
-
-        <!-- Project 3: Payment Dashboard -->
-        <div class="project-container project-card">
-          <img
-            src="assets/projects/ecomdash.png"
-            alt="Payment Dashboard"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Payment Processing Dashboard</h3>
-          <p class="project-details">
-            Fault-tolerant payment gateway with Redis-cached Luhn validation
-            (80% latency reduction) and Celery async processing. Real-time
-            WebSocket dashboard with JWT auth, rate limiting, and multi-state
-            payment handling.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">Flask</span>
-            <span class="tech-tag">Redis</span>
-            <span class="tech-tag">Celery</span>
-            <span class="tech-tag">Docker</span>
-          </div>
-          <a
-            href="https://github.com/Pooja2579"
-            target="_blank"
-            class="project-link"
-            >View on GitHub →</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT & RESUME -->
-    <section id="contact-resume" class="contact-resume">
-      <div class="contact-container">
+        
+        <button class="projects-carousel-btn next-project-btn" aria-label="Next Projects">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    
+    <div class="projects-dots"></div>
+<!-- CONTACT & RESUME -->
+<section id="contact-resume" class="contact-resume">
+    <div class="contact-container">
         <h2 class="contact-title">Let's Connect</h2>
         <p class="resume-description">
-          I'm always open to new opportunities and collaborations. Feel free to
-          reach out or check out my work!
+            I'm always open to new opportunities and collaborations. Feel free to
+            reach out or check out my work!
         </p>
+        
+        <!-- Professional & Social Icons using Font Awesome -->
         <div class="icons-container">
-          <a
-            href="https://www.linkedin.com/in/pooja2002/"
-            target="_blank"
-            class="icon-link"
-          >
-            <img
-              src="assets/contact/linkedin.png"
-              alt="LinkedIn"
-              class="icon-img"
-            />
-          </a>
-          <a
-            href="https://github.com/Pooja2579"
-            target="_blank"
-            class="icon-link"
-          >
-            <img
-              src="assets/contact/github.png"
-              alt="GitHub"
-              class="icon-img"
-            />
-          </a>
-          <a
-            href="mailto:pooja84413@gmail.com"
-            target="_blank"
-            class="icon-link"
-          >
-            <img src="assets/contact/email.png" alt="Email" class="icon-img" />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1W1qy2KZgUKXrDDIaUBtK8YFB3jUyHwRw/view?usp=sharing"
-            target="_blank"
-            class="icon-link"
-          >
-            <img
-              src="assets/contact/resume.png"
-              alt="Resume"
-              class="icon-img"
-            />
-          </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/pooja2002/" target="_blank" class="icon-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/Pooja2579" target="_blank" class="icon-link" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/pooja_35/" target="_blank" class="icon-link" title="LeetCode">
+                <i class="fas fa-code"></i>
+            </a>
+            <!-- GeeksforGeeks -->
+            <a href="https://www.geeksforgeeks.org/profile/pooja84413" target="_blank" class="icon-link" title="GeeksforGeeks">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+            <!-- Email -->
+            <a href="mailto:pooja84413@gmail.com" target="_blank" class="icon-link" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <!-- Resume -->
+            <a href="assets/contact/pooja_resume.pdf" target="_blank" class="icon-link" title="Resume">
+                <i class="fas fa-file-pdf"></i>
+            </a>
         </div>
+        
         <p class="contact-email">📧 pooja84413@gmail.com | 📱 7070219986</p>
-      </div>
-    </section>
+    </div>
+</section>
   </body>
 </html>
